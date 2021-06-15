@@ -1,8 +1,13 @@
 body{
+    margin: 8px;
     font-family: 'Poppins', cursive;
 }
 
 a{
     text-decoration: none;
     color: black;
+}
+
+*{
+    box-sizing: border-box;
 }
