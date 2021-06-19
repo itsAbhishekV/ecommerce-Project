@@ -1,6 +1,7 @@
 body{
     margin: 8px;
     font-family: 'Poppins', cursive;
+    user-select: none !important;
 }
 
 a{
