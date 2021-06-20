@@ -1,14 +1,13 @@
 body{
-    margin: 8px;
-    font-family: 'Poppins', cursive;
-    user-select: none !important;
+    font-family: 'Open Sans Condensed';
+    font-weight: bold;
+    user-select: none;
+    margin: 10px;
 }
-
 a{
     text-decoration: none;
     color: black;
 }
-
 *{
     box-sizing: border-box;
 }
