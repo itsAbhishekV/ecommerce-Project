@@ -8,6 +8,8 @@ import ShopPage from "./Pages/ShopPage/ShopPage.pages";
 import Header from "./Components/Header/Header.component";
 import SignInAndSignUp from "./Pages/SignInAndSignUp/SignInAndSignUp.pages";
 import {auth, createUserProfile} from './Firebase/Firebase.util'
+import { selectCurrentUser } from "./Redux/User/User.selectors";
+import { createStructuredSelector } from "reselect";
 
 class App extends React.Component{
 
@@ -50,8 +52,8 @@ class App extends React.Component{
     }
 }
 
-const mapStateToState = state => ({
-    currentUser: state.user.currentUser
+const mapStateToState = createStructuredSelector({
+    currentUser: selectCurrentUser
 })
 const mapDispatchToState = dispatch => ({
     setCurrentUser: user => dispatch(setCurrentUser(user))
