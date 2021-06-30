@@ -11,7 +11,23 @@
     padding: 25px;
   }
 
+  .block {
+    height: 100%;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .name{
+      font-weight: 600;
+      margin-right: 30px;
+      letter-spacing: 0.04rem;
+    }
+  }
+
   .options {
+    font-weight: 500 !important;
     width: 50%;
     height: 100%;
     display: flex;
